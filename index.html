@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>Kuliner Japanes</title>
+
+        <!--  font awesome cdn link  -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+          <!-- custom css file link -->
+          <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+
+        <!-- header section starts -->
+
+         <header>
+
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+         
+            <a href="#" class="logo">JAPANES FOODS<span>.</span></a>
+         
+            <nav class="navbar">
+                <a href="#sign-up">sign-up</a>
+                <a href="#login">login</a>
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#products">products</a>
+            </nav>
+         
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-user"></a>
+            </div>
+
+         </header>
+
+         <!-- header section ends -->
+
+         <!-- Sign Up Section -->
+    <section class="signup" id="signup">
+        <div class="signup-container">
+            <h1 class="signup-heading">Sign Up</h1>
+           
+            <form action="#login" method="POST" class="signup-form">
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="signup-btn">Sign Up </button>
+                <p class="login-link">Already have an account? <a href="#login">login</a></p>
+            </form>
+        </div>
+    </section>
+
+         <!-- login section starts -->
+
+        <section class="login" id="login">
+            <div class="login-container">
+                <h1 class="login-heading">Login</h1>
+                <form action="#home" method="POST" class="login-form">
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                    <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+                </form>
+            </div>
+        </section>
+
+
+          <!-- login section ends -->
+
+
+        <!-- home section starts -->
+         <section class="home" id="home">
+            <div class="content">
+                <h3>JAPANES FOOD ANIME</h3>
+                <span>Animation food</span>
+                <p>japanes food anime adalah makanan yang Terinpiransi dari film/animation berasal dari jepang</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+
+         </section>
+
+        <!-- home section ends -->
+
+        <!-- about section starts -->
+
+        <section class="about" id="about">
+
+            <h1 class="heading"> <span> about </span> us </h1>
+
+            <div class="row">
+
+                <div class="video-container">
+                    <video src="images/aboud.vid.mp4" loop autoplay controls></video>
+                    <h4>best seller</h4>
+                </div>
+
+                <div class="content">
+                    <h3> why choose us ?</h3>
+                    <p>"Nikmati Makanan Seperti yang Ada di Studio Ghibli Penuh Keajaiban dan Keindahan!"
+                        Menggunakan inspirasi dari film-film Studio Ghibli, seperti Spirited Away atau My Neighbor Totoro, yang sering menampilkan hidangan yang memikat.</p>
+                    <a href="#" class="btn">learn more</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+          <!-- about section ends -->
+
+
+<!-- products section starts -->
+
+<section class="products" id="products">
+    <h1 class="heading"> latest <span>products</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <span class="discount">-19%</span>
+        <div class="images">
+            <img src="images/img-1.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Tempura</h3>
+            <div class="price"> $12.99 <span> $15.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-9%</span>
+        <div class="images">
+            <img src="images/img-2.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Taiyaki</h3>
+            <div class="price"> $12.99 <span> $15.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-11%</span>
+        <div class="images">
+            <img src="images/img-3.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Sake-rui (Shusi Salmon)</h3>
+            <div class="price"> $12.99 <span> $15.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-18%</span>
+        <div class="images">
+            <img src="images/img-4.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Udon</h3>
+            <div class="price"> $12.99 <span> $15.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-16%</span>
+        <div class="images">
+            <img src="images/img-5.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Katsukarē</h3>
+            <div class="price"> $12.99 <span> $15.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-13%</span>
+        <div class="images">
+            <img src="images/img-6.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Oyakodon</h3>
+            <div class="price"> $12.99 <span> $15.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-25%</span>
+        <div class="images">
+            <img src="images/img-7.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Kare</h3>
+            <div class="price"> $12.99 <span> $15.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-15%</span>
+        <div class="images">
+            <img src="images/img-8.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Gohan</h3>
+            <div class="price"> $12.99 <span> $15.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-12%</span>
+        <div class="images">
+            <img src="images/img-9.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Aburi-mochi.</h3>
+            <div class="price"> $12.99 <span> $15.99 </span> </div>
+        </div>
+    </div>
+
+ </div>
+
+</section>
+
+
+<!-- products section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

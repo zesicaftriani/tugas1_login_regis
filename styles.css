@@ -1,0 +1,484 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/* Body and general layout */
+body {
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 3rem;
+    position: relative;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+header .logo span {
+    color: #ff64b2;
+}
+
+header .navbar {
+    display: flex;
+    gap: 2rem;
+}
+
+header .navbar a {
+    color: #fff;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+
+header .navbar a:hover {
+    color: #ff64b2;
+}
+
+header .icons a {
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+header .icons a:hover {
+    color: #ff64b2;
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/* Home Section */
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/home1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 5rem;
+    color: #333;
+}
+
+.home .content span{
+    font-size: 4rem;
+    color: #ff64b2;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content{
+font-size: 2.5rem;
+    color: bisque;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: cadetblue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home .content .btn:hover {
+    background-color: #e84393;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 5rem 3rem;
+}
+
+.about .heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    background-color: #888;
+}
+
+.about .heading span {
+    color: #ff64b2;
+}
+
+.about .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.about .video-container {
+    width: 50%;
+    position: relative;
+}
+
+.about .video-container video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about .content {
+    width: 50%;
+}
+
+.about .content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about .content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.about .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff64b2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.about .btn:hover {
+    background-color: #e84393;
+}
+
+/* Products Section */
+.products {
+    background-color: #f9f9f9;
+    padding: 5rem 3rem;
+}
+
+.products .heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.products .heading span {
+    color: #ff64b2;
+}
+
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.products .box {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.products .box .discount {
+    background-color: #ff64b2;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.products .box .images {
+    position: relative;
+}
+
+.products .box .images img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.products .box .icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.products .box .icons a {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.products .box .content {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.products .box .content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.products .box .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.products .box .price span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Login Section */
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #ff64b2;
+    outline: none;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #ff64b2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e84393;
+}
+
+/* Sign Up Section */
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2; /* Background gray for the entire page */
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.signup-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #ff64b2;
+    outline: none;
+}
+
+/* Sign Up Button */
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #ff64b2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #e84393;
+}
+
+/* Login link */
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.login-link a {
+    color: #ff64b2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .signup-container {
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    .signup-heading {
+        font-size: 2rem;
+    }
+
+    .input-group input {
+        font-size: 0.9rem;
+    }
+
+    .signup-btn {
+        font-size: 1rem;
+    }
+
+    .login-link {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .navbar {
+        display: none;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    .products .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home .content span {
+        font-size: 1.3rem;
+    }
+
+    .login-container {
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    .login-heading {
+        font-size: 1.5rem;
+    }
+
+    .input-group input {
+        font-size: 0.9rem;
+    }
+
+    .login-btn {
+        font-size: 1rem;
+    }
+}
