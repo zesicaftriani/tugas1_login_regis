@@ -38,6 +38,12 @@
                 <a href="#" class="fas fa-user"></a>
             </div>
 
+            <!-- New Section to Display Cart and Favorites Info -->
+        <div class="header-info">
+            <span id="cart-count">Cart: 0</span> | 
+            <span id="favorites-count">Favorites: 0</span>
+        </div>
+
          </header>
 
          <!-- header section ends -->
@@ -155,6 +161,70 @@
         <div class="content">
             <h3>Tempura</h3>
             <div class="price"> $12.99 <span> $15.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-19%</span>
+        <div class="images">
+            <img src="images/ramen.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Ramen</h3>
+            <div class="price"> $35.99 <span> $45.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-19%</span>
+        <div class="images">
+            <img src="images/almond tofu.jpeg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Almod Tofu</h3>
+            <div class="price"> $10.99 <span> $21.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-19%</span>
+        <div class="images">
+            <img src="images/Dango.jpeg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Dango Kawai</h3>
+            <div class="price"> $5.99 <span> $10.99 </span> </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="discount">-19%</span>
+        <div class="images">
+            <img src="images/Omelette Rice.jpeg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Omelette Rice Original</h3>
+            <div class="price"> $25.99 <span> $35.99 </span> </div>
         </div>
     </div>
 
@@ -294,42 +364,55 @@
 <!-- products section ends -->
 
 
+ <!-- JavaScript -->
+ <script>
+    // Inisialisasi variabel untuk menghitung item dalam keranjang dan favorit
+    let cartCount = 0;
+    let favoriteCount = 0;
 
+    // Fungsi untuk menambahkan item ke dalam cart
+    const cartBtns = document.querySelectorAll('.cart-btn');
+    cartBtns.forEach(btn => {
+        btn.addEventListener('click', function(event) {
+            event.preventDefault();
+            const productName = this.closest('.box').querySelector('.content h3').innerText;
+            
+            // Tambahkan item ke keranjang dan update tampilan header
+            cartCount++;
+            document.getElementById('cart-count').innerText = `Cart: ${cartCount}`;
 
+            alert(`${productName} telah ditambahkan ke keranjang!`);
+        });
+    });
 
+    // Fungsi untuk menambahkan produk ke dalam daftar favorit
+    const heartBtns = document.querySelectorAll('.fas.fa-heart');
+    heartBtns.forEach(btn => {
+        btn.addEventListener('click', function(event) {
+            event.preventDefault();
+            const productName = this.closest('.box').querySelector('.content h3').innerText;
+            
+            // Tambahkan item ke favorit dan update tampilan header
+            favoriteCount++;
+            document.getElementById('favorites-count').innerText = `Favorites: ${favoriteCount}`;
 
+            alert(`${productName} telah ditambahkan ke favorit!`);
+        });
+    });
 
+    // Fungsi untuk berbagi produk
+    const shareBtns = document.querySelectorAll('.fas.fa-share');
+    shareBtns.forEach(btn => {
+        btn.addEventListener('click', function(event) {
+            event.preventDefault();
+            const productName = this.closest('.box').querySelector('.content h3').innerText;
+            alert(`Berbagi produk: ${productName}`);
+        });
+    });
+</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>
 
 
 

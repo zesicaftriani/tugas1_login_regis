@@ -70,6 +70,16 @@ header .fa-bars {
     display: none;
 }
 
+.header-info {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+#cart-count, #favorites-count {
+    font-weight: bold;
+}
+
 /* Home Section */
 .home{
     display: flex;
